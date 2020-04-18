@@ -1,0 +1,772 @@
+src/com/cardService.java:18:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/com/cardService.java:18:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/com/cardService.java:18:	ClassNamingConventions: The class name 'cardService' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/com/cardService.java:18:	ClassNamingConventions: The class name 'cardService' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/com/cardService.java:18:	CommentRequired: Class comments are required
+src/com/cardService.java:18:	CommentRequired: Class comments are required
+src/com/cardService.java:19:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/cardService.java:19:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/cardService.java:19:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the cardObj field if you want a default access modifier
+src/com/cardService.java:19:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the cardObj field if you want a default access modifier
+src/com/cardService.java:19:	CommentRequired: Field comments are required
+src/com/cardService.java:19:	CommentRequired: Field comments are required
+src/com/cardService.java:19:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/com/cardService.java:19:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/com/cardService.java:25:	CommentRequired: Public method and constructor comments are required
+src/com/cardService.java:25:	CommentRequired: Public method and constructor comments are required
+src/com/cardService.java:33:	CommentRequired: Public method and constructor comments are required
+src/com/cardService.java:33:	CommentRequired: Public method and constructor comments are required
+src/com/cardService.java:33:	MethodArgumentCouldBeFinal: Parameter 'cardNo' is not assigned and could be declared final
+src/com/cardService.java:33:	MethodArgumentCouldBeFinal: Parameter 'cardNo' is not assigned and could be declared final
+src/com/cardService.java:33:	MethodArgumentCouldBeFinal: Parameter 'holderName' is not assigned and could be declared final
+src/com/cardService.java:33:	MethodArgumentCouldBeFinal: Parameter 'holderName' is not assigned and could be declared final
+src/com/cardService.java:33:	UseObjectForClearerAPI: Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/cardService.java:33:	UseObjectForClearerAPI: Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/cardService.java:34:	MethodArgumentCouldBeFinal: Parameter 'cvv' is not assigned and could be declared final
+src/com/cardService.java:34:	MethodArgumentCouldBeFinal: Parameter 'cvv' is not assigned and could be declared final
+src/com/cardService.java:34:	MethodArgumentCouldBeFinal: Parameter 'expiryDate' is not assigned and could be declared final
+src/com/cardService.java:34:	MethodArgumentCouldBeFinal: Parameter 'expiryDate' is not assigned and could be declared final
+src/com/cardService.java:35:	MethodArgumentCouldBeFinal: Parameter 'paymentNo' is not assigned and could be declared final
+src/com/cardService.java:35:	MethodArgumentCouldBeFinal: Parameter 'paymentNo' is not assigned and could be declared final
+src/com/cardService.java:36:	LocalVariableCouldBeFinal: Local variable 'output' could be declared final
+src/com/cardService.java:36:	LocalVariableCouldBeFinal: Local variable 'output' could be declared final
+src/com/cardService.java:37:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'output'
+src/com/cardService.java:37:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'output'
+src/com/cardService.java:44:	CommentRequired: Public method and constructor comments are required
+src/com/cardService.java:44:	CommentRequired: Public method and constructor comments are required
+src/com/cardService.java:44:	MethodArgumentCouldBeFinal: Parameter 'cardData' is not assigned and could be declared final
+src/com/cardService.java:44:	MethodArgumentCouldBeFinal: Parameter 'cardData' is not assigned and could be declared final
+src/com/cardService.java:46:	LocalVariableCouldBeFinal: Local variable 'cardObject' could be declared final
+src/com/cardService.java:46:	LocalVariableCouldBeFinal: Local variable 'cardObject' could be declared final
+src/com/cardService.java:48:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/cardService.java:48:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/cardService.java:48:	LocalVariableCouldBeFinal: Local variable 'cardNo' could be declared final
+src/com/cardService.java:48:	LocalVariableCouldBeFinal: Local variable 'cardNo' could be declared final
+src/com/cardService.java:49:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/cardService.java:49:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/cardService.java:49:	LocalVariableCouldBeFinal: Local variable 'holderName' could be declared final
+src/com/cardService.java:49:	LocalVariableCouldBeFinal: Local variable 'holderName' could be declared final
+src/com/cardService.java:50:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/cardService.java:50:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/cardService.java:50:	LocalVariableCouldBeFinal: Local variable 'expiryDate' could be declared final
+src/com/cardService.java:50:	LocalVariableCouldBeFinal: Local variable 'expiryDate' could be declared final
+src/com/cardService.java:51:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/cardService.java:51:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/cardService.java:51:	LocalVariableCouldBeFinal: Local variable 'cvv' could be declared final
+src/com/cardService.java:51:	LocalVariableCouldBeFinal: Local variable 'cvv' could be declared final
+src/com/cardService.java:52:	LocalVariableCouldBeFinal: Local variable 'output' could be declared final
+src/com/cardService.java:52:	LocalVariableCouldBeFinal: Local variable 'output' could be declared final
+src/com/cardService.java:53:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'output'
+src/com/cardService.java:53:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'output'
+src/com/cardService.java:60:	CommentRequired: Public method and constructor comments are required
+src/com/cardService.java:60:	CommentRequired: Public method and constructor comments are required
+src/com/cardService.java:60:	MethodArgumentCouldBeFinal: Parameter 'cardData' is not assigned and could be declared final
+src/com/cardService.java:60:	MethodArgumentCouldBeFinal: Parameter 'cardData' is not assigned and could be declared final
+src/com/cardService.java:62:	LocalVariableCouldBeFinal: Local variable 'doc' could be declared final
+src/com/cardService.java:62:	LocalVariableCouldBeFinal: Local variable 'doc' could be declared final
+src/com/cardService.java:64:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/cardService.java:64:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/cardService.java:64:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/cardService.java:64:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/cardService.java:64:	LocalVariableCouldBeFinal: Local variable 'cardNo' could be declared final
+src/com/cardService.java:64:	LocalVariableCouldBeFinal: Local variable 'cardNo' could be declared final
+src/com/cardService.java:65:	LocalVariableCouldBeFinal: Local variable 'output' could be declared final
+src/com/cardService.java:65:	LocalVariableCouldBeFinal: Local variable 'output' could be declared final
+src/com/cardService.java:66:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'output'
+src/com/cardService.java:66:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'output'
+src/com/paymentService.java:15:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/com/paymentService.java:15:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/com/paymentService.java:15:	ClassNamingConventions: The class name 'paymentService' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/com/paymentService.java:15:	ClassNamingConventions: The class name 'paymentService' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/com/paymentService.java:15:	CommentRequired: Class comments are required
+src/com/paymentService.java:15:	CommentRequired: Class comments are required
+src/com/paymentService.java:16:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/paymentService.java:16:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/paymentService.java:16:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the paymentObj field if you want a default access modifier
+src/com/paymentService.java:16:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the paymentObj field if you want a default access modifier
+src/com/paymentService.java:16:	CommentRequired: Field comments are required
+src/com/paymentService.java:16:	CommentRequired: Field comments are required
+src/com/paymentService.java:16:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/com/paymentService.java:16:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/com/paymentService.java:22:	CommentRequired: Public method and constructor comments are required
+src/com/paymentService.java:22:	CommentRequired: Public method and constructor comments are required
+src/com/paymentService.java:30:	CommentRequired: Public method and constructor comments are required
+src/com/paymentService.java:30:	CommentRequired: Public method and constructor comments are required
+src/com/paymentService.java:30:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/com/paymentService.java:30:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/com/paymentService.java:30:	MethodArgumentCouldBeFinal: Parameter 'patientId' is not assigned and could be declared final
+src/com/paymentService.java:30:	MethodArgumentCouldBeFinal: Parameter 'patientId' is not assigned and could be declared final
+src/com/paymentService.java:30:	MethodArgumentCouldBeFinal: Parameter 'paymentType' is not assigned and could be declared final
+src/com/paymentService.java:30:	MethodArgumentCouldBeFinal: Parameter 'paymentType' is not assigned and could be declared final
+src/com/paymentService.java:31:	LocalVariableCouldBeFinal: Local variable 'output' could be declared final
+src/com/paymentService.java:31:	LocalVariableCouldBeFinal: Local variable 'output' could be declared final
+src/com/paymentService.java:32:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'output'
+src/com/paymentService.java:32:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'output'
+src/com/paymentService.java:39:	CommentRequired: Public method and constructor comments are required
+src/com/paymentService.java:39:	CommentRequired: Public method and constructor comments are required
+src/com/paymentService.java:39:	MethodArgumentCouldBeFinal: Parameter 'paymentData' is not assigned and could be declared final
+src/com/paymentService.java:39:	MethodArgumentCouldBeFinal: Parameter 'paymentData' is not assigned and could be declared final
+src/com/paymentService.java:41:	LocalVariableCouldBeFinal: Local variable 'doc' could be declared final
+src/com/paymentService.java:41:	LocalVariableCouldBeFinal: Local variable 'doc' could be declared final
+src/com/paymentService.java:43:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/paymentService.java:43:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/com/paymentService.java:43:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/paymentService.java:43:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/paymentService.java:43:	LocalVariableCouldBeFinal: Local variable 'paymentNo' could be declared final
+src/com/paymentService.java:43:	LocalVariableCouldBeFinal: Local variable 'paymentNo' could be declared final
+src/com/paymentService.java:44:	LocalVariableCouldBeFinal: Local variable 'output' could be declared final
+src/com/paymentService.java:44:	LocalVariableCouldBeFinal: Local variable 'output' could be declared final
+src/com/paymentService.java:45:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'output'
+src/com/paymentService.java:45:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'output'
+src/database/dbconnect.java:6:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/database/dbconnect.java:6:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/database/dbconnect.java:6:	ClassNamingConventions: The class name 'dbconnect' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/database/dbconnect.java:6:	ClassNamingConventions: The class name 'dbconnect' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/database/dbconnect.java:6:	CommentRequired: Class comments are required
+src/database/dbconnect.java:6:	CommentRequired: Class comments are required
+src/database/dbconnect.java:9:	CommentRequired: Public method and constructor comments are required
+src/database/dbconnect.java:9:	CommentRequired: Public method and constructor comments are required
+src/database/dbconnect.java:11:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'con' (lines '11'-'18').
+src/database/dbconnect.java:11:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'con' (lines '11'-'18').
+src/database/dbconnect.java:21:	SystemPrintln: System.out.print is used
+src/database/dbconnect.java:21:	SystemPrintln: System.out.print is used
+src/database/dbconnect.java:23:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/database/dbconnect.java:23:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/database/dbconnect.java:24:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/database/dbconnect.java:24:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/model/Card.java:9:	DuplicateImports: Avoid duplicate imports such as 'database.dbconnect'
+src/model/Card.java:9:	DuplicateImports: Avoid duplicate imports such as 'database.dbconnect'
+src/model/Card.java:11:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/model/Card.java:11:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/model/Card.java:11:	CommentRequired: Class comments are required
+src/model/Card.java:11:	CommentRequired: Class comments are required
+src/model/Card.java:11:	ShortClassName: Avoid short class names like Card
+src/model/Card.java:11:	ShortClassName: Avoid short class names like Card
+src/model/Card.java:13:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/model/Card.java:13:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/model/Card.java:13:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the object field if you want a default access modifier
+src/model/Card.java:13:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the object field if you want a default access modifier
+src/model/Card.java:13:	CommentRequired: Field comments are required
+src/model/Card.java:13:	CommentRequired: Field comments are required
+src/model/Card.java:13:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/model/Card.java:13:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/model/Card.java:15:	CommentRequired: Public method and constructor comments are required
+src/model/Card.java:15:	CommentRequired: Public method and constructor comments are required
+src/model/Card.java:15:	MethodArgumentCouldBeFinal: Parameter 'cardNo' is not assigned and could be declared final
+src/model/Card.java:15:	MethodArgumentCouldBeFinal: Parameter 'cardNo' is not assigned and could be declared final
+src/model/Card.java:15:	MethodArgumentCouldBeFinal: Parameter 'cvv' is not assigned and could be declared final
+src/model/Card.java:15:	MethodArgumentCouldBeFinal: Parameter 'cvv' is not assigned and could be declared final
+src/model/Card.java:15:	MethodArgumentCouldBeFinal: Parameter 'expiryDate' is not assigned and could be declared final
+src/model/Card.java:15:	MethodArgumentCouldBeFinal: Parameter 'expiryDate' is not assigned and could be declared final
+src/model/Card.java:15:	MethodArgumentCouldBeFinal: Parameter 'holderName' is not assigned and could be declared final
+src/model/Card.java:15:	MethodArgumentCouldBeFinal: Parameter 'holderName' is not assigned and could be declared final
+src/model/Card.java:15:	MethodArgumentCouldBeFinal: Parameter 'paymentNo' is not assigned and could be declared final
+src/model/Card.java:15:	MethodArgumentCouldBeFinal: Parameter 'paymentNo' is not assigned and could be declared final
+src/model/Card.java:15:	UseObjectForClearerAPI: Rather than using a lot of String arguments, consider using a container object for those values.
+src/model/Card.java:15:	UseObjectForClearerAPI: Rather than using a lot of String arguments, consider using a container object for those values.
+src/model/Card.java:16:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '16'-'36').
+src/model/Card.java:16:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '16'-'36').
+src/model/Card.java:16:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '16'-'42').
+src/model/Card.java:16:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '16'-'42').
+src/model/Card.java:18:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Card.java:18:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Card.java:18:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Card.java:18:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Card.java:20:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Card.java:20:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Card.java:24:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Card.java:24:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Card.java:25:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Card.java:25:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Card.java:25:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:25:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:25:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Card.java:25:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Card.java:27:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:27:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:28:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:28:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:29:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:29:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:30:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:30:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:31:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:31:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:34:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:34:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:35:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:35:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:36:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '36'-'38').
+src/model/Card.java:36:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '36'-'38').
+src/model/Card.java:37:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Card.java:37:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Card.java:39:	SystemPrintln: System.err.println is used
+src/model/Card.java:39:	SystemPrintln: System.err.println is used
+src/model/Card.java:44:	CommentRequired: Public method and constructor comments are required
+src/model/Card.java:44:	CommentRequired: Public method and constructor comments are required
+src/model/Card.java:45:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '45'-'52').
+src/model/Card.java:45:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '45'-'52').
+src/model/Card.java:45:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '45'-'85').
+src/model/Card.java:45:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '45'-'85').
+src/model/Card.java:47:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Card.java:47:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Card.java:47:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Card.java:47:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Card.java:49:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Card.java:49:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Card.java:54:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Card.java:54:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Card.java:55:	CloseResource: Ensure that resources like this Statement object are closed after use
+src/model/Card.java:55:	CloseResource: Ensure that resources like this Statement object are closed after use
+src/model/Card.java:55:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:55:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:55:	LocalVariableCouldBeFinal: Local variable 'stmt' could be declared final
+src/model/Card.java:55:	LocalVariableCouldBeFinal: Local variable 'stmt' could be declared final
+src/model/Card.java:56:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Card.java:56:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Card.java:56:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:56:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:56:	LocalVariableCouldBeFinal: Local variable 'rs' could be declared final
+src/model/Card.java:56:	LocalVariableCouldBeFinal: Local variable 'rs' could be declared final
+src/model/Card.java:56:	ShortVariable: Avoid variables with short names like rs
+src/model/Card.java:56:	ShortVariable: Avoid variables with short names like rs
+src/model/Card.java:58:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:58:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:59:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:59:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:59:	LocalVariableCouldBeFinal: Local variable 'cardNo' could be declared final
+src/model/Card.java:59:	LocalVariableCouldBeFinal: Local variable 'cardNo' could be declared final
+src/model/Card.java:60:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:60:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:60:	LocalVariableCouldBeFinal: Local variable 'paymentNo' could be declared final
+src/model/Card.java:60:	LocalVariableCouldBeFinal: Local variable 'paymentNo' could be declared final
+src/model/Card.java:61:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:61:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:61:	LocalVariableCouldBeFinal: Local variable 'holderName' could be declared final
+src/model/Card.java:61:	LocalVariableCouldBeFinal: Local variable 'holderName' could be declared final
+src/model/Card.java:62:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:62:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:62:	LocalVariableCouldBeFinal: Local variable 'expiryDate' could be declared final
+src/model/Card.java:62:	LocalVariableCouldBeFinal: Local variable 'expiryDate' could be declared final
+src/model/Card.java:63:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:63:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:63:	LocalVariableCouldBeFinal: Local variable 'cvv' could be declared final
+src/model/Card.java:63:	LocalVariableCouldBeFinal: Local variable 'cvv' could be declared final
+src/model/Card.java:65:	AvoidDuplicateLiterals: The String literal "</td>" appears 5 times in this file; the first occurrence is on line 65
+src/model/Card.java:65:	AvoidDuplicateLiterals: The String literal "</td>" appears 5 times in this file; the first occurrence is on line 65
+src/model/Card.java:65:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:65:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:66:	AvoidDuplicateLiterals: The String literal "<td>" appears 4 times in this file; the first occurrence is on line 66
+src/model/Card.java:66:	AvoidDuplicateLiterals: The String literal "<td>" appears 4 times in this file; the first occurrence is on line 66
+src/model/Card.java:66:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:66:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:67:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:67:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:68:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:68:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:69:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:69:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:71:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:71:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:77:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:77:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:79:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:79:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Card.java:80:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Card.java:80:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Card.java:82:	SystemPrintln: System.err.println is used
+src/model/Card.java:82:	SystemPrintln: System.err.println is used
+src/model/Card.java:87:	CommentRequired: Public method and constructor comments are required
+src/model/Card.java:87:	CommentRequired: Public method and constructor comments are required
+src/model/Card.java:87:	MethodArgumentCouldBeFinal: Parameter 'cardNo' is not assigned and could be declared final
+src/model/Card.java:87:	MethodArgumentCouldBeFinal: Parameter 'cardNo' is not assigned and could be declared final
+src/model/Card.java:87:	MethodArgumentCouldBeFinal: Parameter 'cvv' is not assigned and could be declared final
+src/model/Card.java:87:	MethodArgumentCouldBeFinal: Parameter 'cvv' is not assigned and could be declared final
+src/model/Card.java:87:	MethodArgumentCouldBeFinal: Parameter 'expiryDate' is not assigned and could be declared final
+src/model/Card.java:87:	MethodArgumentCouldBeFinal: Parameter 'expiryDate' is not assigned and could be declared final
+src/model/Card.java:87:	MethodArgumentCouldBeFinal: Parameter 'holderName' is not assigned and could be declared final
+src/model/Card.java:87:	MethodArgumentCouldBeFinal: Parameter 'holderName' is not assigned and could be declared final
+src/model/Card.java:87:	UseObjectForClearerAPI: Rather than using a lot of String arguments, consider using a container object for those values.
+src/model/Card.java:87:	UseObjectForClearerAPI: Rather than using a lot of String arguments, consider using a container object for those values.
+src/model/Card.java:88:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '88'-'105').
+src/model/Card.java:88:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '88'-'105').
+src/model/Card.java:88:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '88'-'111').
+src/model/Card.java:88:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '88'-'111').
+src/model/Card.java:90:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Card.java:90:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Card.java:90:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Card.java:90:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Card.java:92:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Card.java:92:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Card.java:95:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Card.java:95:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Card.java:96:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Card.java:96:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Card.java:96:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:96:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:96:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Card.java:96:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Card.java:98:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:98:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:99:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:99:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:100:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:100:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:101:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:101:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:103:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:103:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:104:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:104:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:105:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '105'-'107').
+src/model/Card.java:105:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '105'-'107').
+src/model/Card.java:106:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Card.java:106:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Card.java:108:	SystemPrintln: System.err.println is used
+src/model/Card.java:108:	SystemPrintln: System.err.println is used
+src/model/Card.java:113:	CommentRequired: Public method and constructor comments are required
+src/model/Card.java:113:	CommentRequired: Public method and constructor comments are required
+src/model/Card.java:113:	MethodArgumentCouldBeFinal: Parameter 'cardNo' is not assigned and could be declared final
+src/model/Card.java:113:	MethodArgumentCouldBeFinal: Parameter 'cardNo' is not assigned and could be declared final
+src/model/Card.java:114:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '114'-'128').
+src/model/Card.java:114:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '114'-'128').
+src/model/Card.java:114:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '114'-'134').
+src/model/Card.java:114:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '114'-'134').
+src/model/Card.java:116:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Card.java:116:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Card.java:116:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Card.java:116:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Card.java:118:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Card.java:118:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Card.java:121:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Card.java:121:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Card.java:122:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Card.java:122:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Card.java:122:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:122:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:122:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Card.java:122:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Card.java:124:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:124:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:126:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:126:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:127:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:127:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Card.java:128:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '128'-'130').
+src/model/Card.java:128:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '128'-'130').
+src/model/Card.java:129:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Card.java:129:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Card.java:131:	SystemPrintln: System.err.println is used
+src/model/Card.java:131:	SystemPrintln: System.err.println is used
+src/model/Payment.java:10:	DuplicateImports: Avoid duplicate imports such as 'database.dbconnect'
+src/model/Payment.java:10:	DuplicateImports: Avoid duplicate imports such as 'database.dbconnect'
+src/model/Payment.java:12:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/model/Payment.java:12:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/model/Payment.java:12:	CommentRequired: Class comments are required
+src/model/Payment.java:12:	CommentRequired: Class comments are required
+src/model/Payment.java:14:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/model/Payment.java:14:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/model/Payment.java:14:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the object field if you want a default access modifier
+src/model/Payment.java:14:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the object field if you want a default access modifier
+src/model/Payment.java:14:	CommentRequired: Field comments are required
+src/model/Payment.java:14:	CommentRequired: Field comments are required
+src/model/Payment.java:14:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/model/Payment.java:14:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/model/Payment.java:16:	CommentSize: Comment is too large: Line too long
+src/model/Payment.java:16:	CommentSize: Comment is too large: Line too long
+src/model/Payment.java:17:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:17:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:17:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/model/Payment.java:17:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/model/Payment.java:20:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:20:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:20:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:20:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:22:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:22:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:26:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:26:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:26:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:26:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:26:	LocalVariableCouldBeFinal: Local variable 'stmt1' could be declared final
+src/model/Payment.java:26:	LocalVariableCouldBeFinal: Local variable 'stmt1' could be declared final
+src/model/Payment.java:27:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:27:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:28:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Payment.java:28:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Payment.java:28:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:28:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:28:	LocalVariableCouldBeFinal: Local variable 'result1' could be declared final
+src/model/Payment.java:28:	LocalVariableCouldBeFinal: Local variable 'result1' could be declared final
+src/model/Payment.java:30:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:30:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:30:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/model/Payment.java:30:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/model/Payment.java:32:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:32:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:35:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:35:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:36:	SystemPrintln: System.err.println is used
+src/model/Payment.java:36:	SystemPrintln: System.err.println is used
+src/model/Payment.java:43:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:43:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:43:	MethodArgumentCouldBeFinal: Parameter 'patientId' is not assigned and could be declared final
+src/model/Payment.java:43:	MethodArgumentCouldBeFinal: Parameter 'patientId' is not assigned and could be declared final
+src/model/Payment.java:46:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:46:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:46:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:46:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:48:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:48:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:52:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:52:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:52:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:52:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:52:	LocalVariableCouldBeFinal: Local variable 'stmt2' could be declared final
+src/model/Payment.java:52:	LocalVariableCouldBeFinal: Local variable 'stmt2' could be declared final
+src/model/Payment.java:53:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:53:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:54:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Payment.java:54:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Payment.java:54:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:54:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:54:	LocalVariableCouldBeFinal: Local variable 'result2' could be declared final
+src/model/Payment.java:54:	LocalVariableCouldBeFinal: Local variable 'result2' could be declared final
+src/model/Payment.java:56:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:56:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:56:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/model/Payment.java:56:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/model/Payment.java:58:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:58:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:61:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:61:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:62:	SystemPrintln: System.err.println is used
+src/model/Payment.java:62:	SystemPrintln: System.err.println is used
+src/model/Payment.java:68:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:68:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:68:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/model/Payment.java:68:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/model/Payment.java:68:	MethodArgumentCouldBeFinal: Parameter 'patientId' is not assigned and could be declared final
+src/model/Payment.java:68:	MethodArgumentCouldBeFinal: Parameter 'patientId' is not assigned and could be declared final
+src/model/Payment.java:68:	MethodArgumentCouldBeFinal: Parameter 'paymentType' is not assigned and could be declared final
+src/model/Payment.java:68:	MethodArgumentCouldBeFinal: Parameter 'paymentType' is not assigned and could be declared final
+src/model/Payment.java:69:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '69'-'125').
+src/model/Payment.java:69:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '69'-'125').
+src/model/Payment.java:69:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '69'-'131').
+src/model/Payment.java:69:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '69'-'131').
+src/model/Payment.java:70:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'hosID' (lines '70'-'94').
+src/model/Payment.java:70:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'hosID' (lines '70'-'94').
+src/model/Payment.java:70:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'hosID' (lines '70'-'131').
+src/model/Payment.java:70:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'hosID' (lines '70'-'131').
+src/model/Payment.java:71:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'docFee' (lines '71'-'93').
+src/model/Payment.java:71:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'docFee' (lines '71'-'93').
+src/model/Payment.java:71:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'docFee' (lines '71'-'131').
+src/model/Payment.java:71:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'docFee' (lines '71'-'131').
+src/model/Payment.java:73:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'hosFee' (lines '73'-'103').
+src/model/Payment.java:73:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'hosFee' (lines '73'-'103').
+src/model/Payment.java:73:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'hosFee' (lines '73'-'131').
+src/model/Payment.java:73:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'hosFee' (lines '73'-'131').
+src/model/Payment.java:76:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:76:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:76:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:76:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:78:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:78:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:81:	LocalVariableCouldBeFinal: Local variable 'calendar' could be declared final
+src/model/Payment.java:81:	LocalVariableCouldBeFinal: Local variable 'calendar' could be declared final
+src/model/Payment.java:82:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/model/Payment.java:82:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/model/Payment.java:82:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:82:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:82:	LocalVariableCouldBeFinal: Local variable 'dateObj' could be declared final
+src/model/Payment.java:82:	LocalVariableCouldBeFinal: Local variable 'dateObj' could be declared final
+src/model/Payment.java:85:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:85:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:85:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:85:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:85:	LocalVariableCouldBeFinal: Local variable 'stmt' could be declared final
+src/model/Payment.java:85:	LocalVariableCouldBeFinal: Local variable 'stmt' could be declared final
+src/model/Payment.java:88:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:88:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:89:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Payment.java:89:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Payment.java:89:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:89:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:89:	LocalVariableCouldBeFinal: Local variable 'rs' could be declared final
+src/model/Payment.java:89:	LocalVariableCouldBeFinal: Local variable 'rs' could be declared final
+src/model/Payment.java:89:	ShortVariable: Avoid variables with short names like rs
+src/model/Payment.java:89:	ShortVariable: Avoid variables with short names like rs
+src/model/Payment.java:91:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:91:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:93:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'docFee' (lines '93'-'93').
+src/model/Payment.java:93:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'docFee' (lines '93'-'93').
+src/model/Payment.java:93:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:93:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:94:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'hosID' (lines '94'-'94').
+src/model/Payment.java:94:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'hosID' (lines '94'-'94').
+src/model/Payment.java:94:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:94:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:97:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:97:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:97:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:97:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:97:	LocalVariableCouldBeFinal: Local variable 'st' could be declared final
+src/model/Payment.java:97:	LocalVariableCouldBeFinal: Local variable 'st' could be declared final
+src/model/Payment.java:97:	ShortVariable: Avoid variables with short names like st
+src/model/Payment.java:97:	ShortVariable: Avoid variables with short names like st
+src/model/Payment.java:99:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:99:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:100:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Payment.java:100:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Payment.java:100:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:100:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:100:	LocalVariableCouldBeFinal: Local variable 'rs2' could be declared final
+src/model/Payment.java:100:	LocalVariableCouldBeFinal: Local variable 'rs2' could be declared final
+src/model/Payment.java:102:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:102:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:103:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'hosFee' (lines '103'-'103').
+src/model/Payment.java:103:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'hosFee' (lines '103'-'103').
+src/model/Payment.java:103:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:103:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:110:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Payment.java:110:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Payment.java:112:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:112:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:112:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:112:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:112:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Payment.java:112:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Payment.java:114:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:114:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:115:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:115:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:116:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:116:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:117:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:117:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:118:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:118:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:119:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:119:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:120:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:120:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:123:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:123:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:124:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:124:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:125:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '125'-'127').
+src/model/Payment.java:125:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '125'-'127').
+src/model/Payment.java:126:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:126:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:128:	SystemPrintln: System.err.println is used
+src/model/Payment.java:128:	SystemPrintln: System.err.println is used
+src/model/Payment.java:133:	CommentSize: Comment is too large: Line too long
+src/model/Payment.java:133:	CommentSize: Comment is too large: Line too long
+src/model/Payment.java:134:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:134:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:134:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/model/Payment.java:134:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/model/Payment.java:136:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:136:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:136:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:136:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:139:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Payment.java:139:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Payment.java:140:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:140:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:140:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:140:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:140:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Payment.java:140:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Payment.java:142:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:142:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:143:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:143:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:145:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:145:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:146:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:146:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:147:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:147:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:148:	SystemPrintln: System.err.println is used
+src/model/Payment.java:148:	SystemPrintln: System.err.println is used
+src/model/Payment.java:152:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:152:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:152:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/model/Payment.java:152:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/model/Payment.java:152:	MethodArgumentCouldBeFinal: Parameter 'patientId' is not assigned and could be declared final
+src/model/Payment.java:152:	MethodArgumentCouldBeFinal: Parameter 'patientId' is not assigned and could be declared final
+src/model/Payment.java:152:	MethodArgumentCouldBeFinal: Parameter 'paymentType' is not assigned and could be declared final
+src/model/Payment.java:152:	MethodArgumentCouldBeFinal: Parameter 'paymentType' is not assigned and could be declared final
+src/model/Payment.java:154:	ConfusingTernary: Avoid if (x != y) ..; else ..;
+src/model/Payment.java:154:	ConfusingTernary: Avoid if (x != y) ..; else ..;
+src/model/Payment.java:154:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/model/Payment.java:154:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/model/Payment.java:154:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/model/Payment.java:154:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/model/Payment.java:157:	PositionLiteralsFirstInComparisons: Position literals first in String comparisons
+src/model/Payment.java:157:	PositionLiteralsFirstInComparisons: Position literals first in String comparisons
+src/model/Payment.java:167:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:167:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:168:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '168'-'175').
+src/model/Payment.java:168:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '168'-'175').
+src/model/Payment.java:168:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '168'-'209').
+src/model/Payment.java:168:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '168'-'209').
+src/model/Payment.java:170:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:170:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:170:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:170:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:172:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:172:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:177:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Payment.java:177:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Payment.java:178:	CloseResource: Ensure that resources like this Statement object are closed after use
+src/model/Payment.java:178:	CloseResource: Ensure that resources like this Statement object are closed after use
+src/model/Payment.java:178:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:178:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:178:	LocalVariableCouldBeFinal: Local variable 'stmt' could be declared final
+src/model/Payment.java:178:	LocalVariableCouldBeFinal: Local variable 'stmt' could be declared final
+src/model/Payment.java:179:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Payment.java:179:	CloseResource: Ensure that resources like this ResultSet object are closed after use
+src/model/Payment.java:179:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:179:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:179:	LocalVariableCouldBeFinal: Local variable 'rs' could be declared final
+src/model/Payment.java:179:	LocalVariableCouldBeFinal: Local variable 'rs' could be declared final
+src/model/Payment.java:179:	ShortVariable: Avoid variables with short names like rs
+src/model/Payment.java:179:	ShortVariable: Avoid variables with short names like rs
+src/model/Payment.java:181:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:181:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:182:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:182:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:182:	LocalVariableCouldBeFinal: Local variable 'paymentNo' could be declared final
+src/model/Payment.java:182:	LocalVariableCouldBeFinal: Local variable 'paymentNo' could be declared final
+src/model/Payment.java:183:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:183:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:183:	LocalVariableCouldBeFinal: Local variable 'paymentType' could be declared final
+src/model/Payment.java:183:	LocalVariableCouldBeFinal: Local variable 'paymentType' could be declared final
+src/model/Payment.java:184:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:184:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:184:	LocalVariableCouldBeFinal: Local variable 'date' could be declared final
+src/model/Payment.java:184:	LocalVariableCouldBeFinal: Local variable 'date' could be declared final
+src/model/Payment.java:185:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:185:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:185:	LocalVariableCouldBeFinal: Local variable 'amount' could be declared final
+src/model/Payment.java:185:	LocalVariableCouldBeFinal: Local variable 'amount' could be declared final
+src/model/Payment.java:186:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:186:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:186:	LocalVariableCouldBeFinal: Local variable 'appointmentId' could be declared final
+src/model/Payment.java:186:	LocalVariableCouldBeFinal: Local variable 'appointmentId' could be declared final
+src/model/Payment.java:187:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:187:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:187:	LocalVariableCouldBeFinal: Local variable 'patientId' could be declared final
+src/model/Payment.java:187:	LocalVariableCouldBeFinal: Local variable 'patientId' could be declared final
+src/model/Payment.java:189:	AvoidDuplicateLiterals: The String literal "</td>" appears 6 times in this file; the first occurrence is on line 189
+src/model/Payment.java:189:	AvoidDuplicateLiterals: The String literal "</td>" appears 6 times in this file; the first occurrence is on line 189
+src/model/Payment.java:189:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:189:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:190:	AvoidDuplicateLiterals: The String literal "<td>" appears 5 times in this file; the first occurrence is on line 190
+src/model/Payment.java:190:	AvoidDuplicateLiterals: The String literal "<td>" appears 5 times in this file; the first occurrence is on line 190
+src/model/Payment.java:190:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:190:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:191:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:191:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:192:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:192:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:193:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:193:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:194:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:194:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:196:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:196:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:201:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:201:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:203:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:203:	UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+src/model/Payment.java:204:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:204:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:206:	SystemPrintln: System.err.println is used
+src/model/Payment.java:206:	SystemPrintln: System.err.println is used
+src/model/Payment.java:211:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:211:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:211:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/model/Payment.java:211:	MethodArgumentCouldBeFinal: Parameter 'appointmentId' is not assigned and could be declared final
+src/model/Payment.java:211:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/model/Payment.java:211:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/model/Payment.java:211:	MethodArgumentCouldBeFinal: Parameter 'patientId' is not assigned and could be declared final
+src/model/Payment.java:211:	MethodArgumentCouldBeFinal: Parameter 'patientId' is not assigned and could be declared final
+src/model/Payment.java:211:	MethodArgumentCouldBeFinal: Parameter 'paymentType' is not assigned and could be declared final
+src/model/Payment.java:211:	MethodArgumentCouldBeFinal: Parameter 'paymentType' is not assigned and could be declared final
+src/model/Payment.java:211:	ShortVariable: Avoid variables with short names like id
+src/model/Payment.java:211:	ShortVariable: Avoid variables with short names like id
+src/model/Payment.java:211:	UseObjectForClearerAPI: Rather than using a lot of String arguments, consider using a container object for those values.
+src/model/Payment.java:211:	UseObjectForClearerAPI: Rather than using a lot of String arguments, consider using a container object for those values.
+src/model/Payment.java:212:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '212'-'229').
+src/model/Payment.java:212:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '212'-'229').
+src/model/Payment.java:212:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '212'-'235').
+src/model/Payment.java:212:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '212'-'235').
+src/model/Payment.java:214:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:214:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:214:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:214:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:216:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:216:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:219:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Payment.java:219:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Payment.java:220:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:220:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:220:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:220:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:220:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Payment.java:220:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Payment.java:222:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:222:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:223:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:223:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:224:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:224:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:225:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:225:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:227:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:227:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:228:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:228:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:229:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '229'-'231').
+src/model/Payment.java:229:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '229'-'231').
+src/model/Payment.java:230:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:230:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:232:	SystemPrintln: System.err.println is used
+src/model/Payment.java:232:	SystemPrintln: System.err.println is used
+src/model/Payment.java:237:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:237:	CommentRequired: Public method and constructor comments are required
+src/model/Payment.java:237:	MethodArgumentCouldBeFinal: Parameter 'paymentNo' is not assigned and could be declared final
+src/model/Payment.java:237:	MethodArgumentCouldBeFinal: Parameter 'paymentNo' is not assigned and could be declared final
+src/model/Payment.java:238:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '238'-'252').
+src/model/Payment.java:238:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '238'-'252').
+src/model/Payment.java:238:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '238'-'258').
+src/model/Payment.java:238:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'output' (lines '238'-'258').
+src/model/Payment.java:240:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:240:	CloseResource: Ensure that resources like this Connection object are closed after use
+src/model/Payment.java:240:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:240:	LocalVariableCouldBeFinal: Local variable 'con' could be declared final
+src/model/Payment.java:242:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:242:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/model/Payment.java:245:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Payment.java:245:	LocalVariableCouldBeFinal: Local variable 'query' could be declared final
+src/model/Payment.java:246:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:246:	CloseResource: Ensure that resources like this PreparedStatement object are closed after use
+src/model/Payment.java:246:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:246:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:246:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Payment.java:246:	LocalVariableCouldBeFinal: Local variable 'preparedStmt' could be declared final
+src/model/Payment.java:248:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:248:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:250:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:250:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:251:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:251:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/model/Payment.java:252:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '252'-'254').
+src/model/Payment.java:252:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'output' (lines '252'-'254').
+src/model/Payment.java:253:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:253:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/model/Payment.java:255:	SystemPrintln: System.err.println is used
+src/model/Payment.java:255:	SystemPrintln: System.err.println is used

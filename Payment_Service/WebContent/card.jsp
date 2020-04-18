@@ -12,11 +12,11 @@ if (request.getParameter("cardNo") != null) {
 }
 
 //Delete card----------------------------------
-//if (request.getParameter("cardNo") != null) {
-	//Card cardObj = new Card();
-	//String stsMsg = cardObj.deleteCard(request.getParameter("cardNo"));
-	//session.setAttribute("statusMsg", stsMsg);
-//}
+if (request.getParameter("cardNo") != null) {
+	Card cardObj = new Card();
+	String stsMsg = cardObj.deleteCard(request.getParameter("cardNo"));
+	session.setAttribute("statusMsg", stsMsg);
+}
 
 %>
 

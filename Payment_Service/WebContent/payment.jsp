@@ -6,7 +6,7 @@
 	//Insert payment----------------------------------
 if (request.getParameter("amount") != null) {
 	Payment paymentObj = new Payment();
-	String stsMsg = paymentObj.insertPayment(request.getParameter("appointmentId"), request.getParameter("paymentType"));
+	String stsMsg = paymentObj.insertPayment(request.getParameter("patientId"),request.getParameter("appointmentId"), request.getParameter("paymentType"));
 	session.setAttribute("statusMsg", stsMsg);
 }
 
@@ -31,6 +31,8 @@ if (request.getParameter("paymentNo") != null) {
 			<div class="col">
 				<h1>Make Payment</h1>
 				<form method="post" action="payment.jsp">
+				
+					Patient No: <input name="patientId" type="text" class="form-control"><br>
 				
 					Appointment No: <input name="appointmentId" type="text" class="form-control"><br>
 
