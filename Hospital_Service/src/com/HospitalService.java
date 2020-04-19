@@ -84,4 +84,14 @@ public class HospitalService {
 		return output;
 	}
 	
+	//Search Hospital Details
+	@GET
+	@Path("/search")
+	@Produces(MediaType.TEXT_HTML)
+	public String searchHospitals(@QueryParam("name") String name, @QueryParam("city") String city) {
+		String output= hospObj.searchHospitals(name, city);
+		return output;
+
+	}
+	
 }

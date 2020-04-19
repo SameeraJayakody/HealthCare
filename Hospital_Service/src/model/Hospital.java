@@ -227,5 +227,64 @@ public class Hospital {
 		return output;
 	}
 	
+	//For Search Hospital Details
+	public String searchHospitals(String name, String city) 
+	{
+		String output = "";
+		
+		try {
+			Connection con= connect();
+			if(con == null) {
+				return "Error while connecting to the database for deleting.";
+			}
+	
+			// Prepare the html table to be displayed
+			output = "<table border=\"1\"><tr>" + "<th>name</th>" + "<th>type</th>"
+					+ "<th>description</th>" + "<th>phoneNo</th>" + "<th>email</th>" + "<th>code</th>"
+					+ "<th>city</th>"+ "<th>state</th>" + "<th>hospitalFee</th> </tr>";
+
+			String query = "SELECT * FROM hospital WHERE name like '%" + name + "%' "
+					+ "AND city= '" + city + "'";
+			
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+
+			// iterate through the rows in the result set
+			while (rs.next()) {
+				String hospitalID = Integer.toString(rs.getInt("hospitalID"));
+				String hospname = rs.getString("name");
+				String type = rs.getString("type");
+				String description = rs.getString("description");
+				String phoneNo = rs.getString("phoneNo");
+				String email = rs.getString("email");
+				String code = rs.getString("code");
+				String city1 = rs.getString("city");
+				String state = rs.getString("state");
+				String hospitalFee = Double.toString(rs.getDouble("hospitalFee"));
+				//Add into the html table
+				output += "<td>" + hospname + "</td>"; 
+				output += "<td>" + type + "</td>";
+				output += "<td>" + description + "</td>";
+				output += "<td>" + phoneNo + "</td>";
+				output += "<td>" + email + "</td>";
+				output += "<td>" + code + "</td>";
+				output += "<td>" + city1 + "</td>";
+				output += "<td>" + state + "</td>";
+				output += "<td>" + hospitalFee + "</td>";
+				
+
+				// buttons
+				output += "<td><a href=\"http://localhost:8080/HospitalManagement/searchHosp.jsp\">Back</a></td>";
+			}
+			con.close();
+
+			// Complete the html table
+			output += "</table>";
+		} catch (Exception e) {
+			output = "Error while reading the appointment details.";
+			System.err.println(e.getMessage());
+		}
+		return output;
+	}
 
 }
