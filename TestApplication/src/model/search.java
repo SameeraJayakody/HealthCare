@@ -29,7 +29,8 @@ public class search {
 	 * string8, String string9, String string10) {}
 	 */
 
-	public search() {}
+	public search() {
+	}
 
 	public search(int id, int sid, String hospitalID, String hospitalName, String docid, String docname,
 			String speciality, String date, String startTime, String endTime, int roomNo, String status) {
@@ -145,19 +146,17 @@ public class search {
 		this.status = status;
 	}
 
-
-	  @Override 
-	  public String toString(){
-	  
-	  return getStatus();
-		/*
-		 * return
-		 * "sid["+sid+",did"+id+",dname"+hospitalName+",hid"+docid+",dname"+docname+
-		 * ",speciality"+speciality+",date"+date+",stime"+startTime+",endtime"+endTime+
-		 * ",room"+roomNo+",status"+status+"]";
-		 */
-	  
-	  }
-}  
-	  
-	
+	/*
+	 * @Override public String toString(){
+	 * 
+	 * return getStatus();
+	 * 
+	 * return
+	 * "sid["+sid+",did"+id+",dname"+hospitalName+",hid"+docid+",dname"+docname+
+	 * ",speciality"+speciality+",date"+date+",stime"+startTime+",endtime"+endTime+
+	 * ",room"+roomNo+",status"+status+"]";
+	 * 
+	 * 
+	 * }
+	 */
+}

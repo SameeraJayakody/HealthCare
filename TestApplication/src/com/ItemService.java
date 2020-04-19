@@ -97,35 +97,23 @@ public class ItemService {
 	
 	
 	
-	//Search hospital using hospital
-		@GET
-		@Path("/{ID}")
-		@Produces(MediaType.APPLICATION_JSON)
-		public search getHospital(@PathParam("ID") int Hospital_id) {
-
-				return itemObj.getHospital(Hospital_id);
-			
-		}
 	
 	
-		
-		
-		
-		
-	
-	  // View appointment by id
+	// View schedule details via ID
 	  
-	/*
-	 * @GET
-	 * 
-	 * @Path("/{appointment_Id}") // @Consumes(MediaType.APPLICATION_JSON)
-	 * 
-	 * @Produces(MediaType.APPLICATION_JSON) public search
-	 * ShowTypeById(@PathParam("appointment_Id") int id) { return
-	 * itemObj.ShowTypeById(id);
-	 * 
-	 * }
-	 */
+	
+	  @GET
+	  
+	  @Path("/{appointment_Id}") 
+	  @Consumes(MediaType.APPLICATION_JSON)
+	  
+	  @Produces(MediaType.APPLICATION_JSON)
+	  public search ShowTypeById(@PathParam("appointment_Id") int id) 
+	  { 
+		  return itemObj.ShowTypeById(id);
+	  
+	  }
+	 
 	 
 		
 	
@@ -251,13 +239,13 @@ public class ItemService {
 		
 		
 		
-		
+		// confirmed schedule by updating the status
 		
 		@PUT
-		@Path("/updateTes")
+		@Path("/updateDoctorStatus")
 		@Consumes(MediaType.APPLICATION_JSON)
 		@Produces(MediaType.TEXT_PLAIN)
-		public String updateTe(String itemData)
+		public String updateDoctorStatus(String itemData)
 		{
 		//Convert the input string to a JSON object
 		JsonObject itemObject = new JsonParser().parse(itemData).getAsJsonObject();
@@ -266,7 +254,7 @@ public class ItemService {
 		String scheduleID = itemObject.get("scheduleID").getAsString();
 		String status = itemObject.get("status").getAsString();
 		
-		String output = itemObj.updateTes(scheduleID,status);
+		String output = itemObj.updateDoctorStatus(scheduleID,status);
 		
 		return output;
 		
@@ -301,7 +289,7 @@ public class ItemService {
 		
 		
 		
-	    
+	// remove records from confirmed schedule details    
 	    
 
 		@DELETE

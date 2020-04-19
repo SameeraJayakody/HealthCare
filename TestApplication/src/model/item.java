@@ -529,7 +529,7 @@ public class item {
 	// Update only status for the given schedule id (Service method)
 	// -----------------------------------------
 
-	public String updateTes(String id, String status) {
+	public String updateDoctorStatus(String id, String status) {
 		String output = "";
 
 		try {
@@ -701,7 +701,7 @@ public class item {
 	
 	
 	
-	
+	// search doctors via doctor name and doctor id
 	
 	
 	public String docSearch(String dname,String idd) {
@@ -765,65 +765,82 @@ public class item {
 	
 	
 	
-	/*
-	 * public search ShowTypeById (int id)
-	 * 
-	 * {
-	 * 
-	 * List<search> list = viewTypes(id);
-	 * 
-	 * if(!list.isEmpty()) {
-	 * 
-	 * return list.get(0);
-	 * 
-	 * }
-	 * 
-	 * }
-	 * 
-	 * 
-	 * 
-	 * public List<search> viewTypes(int id) {
-	 * 
-	 * List<search> TypeList = new ArrayList<>();
-	 * 
-	 * try { Connection con = obj.connect(); if (con == null) {
-	 * 
-	 * System.out.println("Error While reading from database"); return TypeList;
-	 * 
-	 * }
-	 * 
-	 * String query;
-	 * 
-	 * if(id==0) {
-	 * 
-	 * query = "select * from schedule";
-	 * 
-	 * }
-	 * 
-	 * else {
-	 * 
-	 * query = "select * from schedule where ID="+id; } Statement stmt =
-	 * con.createStatement(); ResultSet results = stmt.executeQuery(query);
-	 * 
-	 * while (results.next()) {
-	 * 
-	 * 
-	 * 
-	 * search type = new search(results.getInt("ID"), results.getInt("scheduleID"),
-	 * results.getString("HospitalID"), results.getString("HospitalName"),
-	 * results.getString("DoctorID"), results.getString("DoctorName"),
-	 * results.getString("Speciality"), results.getString("Date"),
-	 * results.getString("StartTime"), results.getString("EndTime"),
-	 * results.getInt("RoomNumber"), results.getString("Status"));
-	 * 
-	 * TypeList.add(type); } con.close(); } catch (Exception e) {
-	 * System.out.println("Error While Reading");
-	 * System.err.println(e.getMessage()); }
-	 * 
-	 * return TypeList;
-	 * 
-	 * }
-	 */
+	
+	  public search ShowTypeById (int docid)
+	  
+	  {
+	  
+	  List<search> list = viewTypes(docid);
+	 
+	  if(!list.isEmpty()) {
+	 
+	  return list.get(0);
+	  
+	 }
+	  return null;
+	  
+	  }
+	  
+	  
+	  
+	  public List<search> viewTypes(int docid) {
+	  
+	  List<search> TypeList = new ArrayList<>();
+	  
+	  try { Connection con = obj.connect();
+	  if (con == null) {
+	  
+	  System.out.println("Error While reading from database"); 
+	  return TypeList;
+	  
+	  }
+	  System.out.println("Error While reading from database");
+	  String query;
+	  
+	  if(docid == 0) {
+	  
+	  query = "select * from schedule";
+	  
+	  }
+	  
+	  else {
+	  
+	 query = "select * from schedule where `ID`="+docid; 
+	 } 
+	  Statement stmt =con.createStatement();
+	  ResultSet results = stmt.executeQuery(query);
+	  
+	  while (results.next()) {
+	  
+	  
+	  
+	  search type = new search(results.getInt("ID"), 
+			  results.getInt("scheduleID"),
+	  results.getString("HospitalID"),
+	  results.getString("HospitalName"),
+	  results.getString("DoctorID"),
+	  results.getString("DoctorName"),
+	  results.getString("Speciality"),
+	  results.getString("Date"),
+	  results.getString("StartTime"),
+	  results.getString("EndTime"),
+	  results.getInt("RoomNumber"),
+	  results.getString("Status"));
+	  
+	  TypeList.add(type); 
+	  }
+	  con.close(); 
+	  } catch (Exception e) {
+		  
+	  System.out.println("Error While Reading");
+	  System.err.println(e.getMessage());
+
+	  }
+	  
+	  return TypeList;
+	  
+	  }
+	 
 	
 	
 	
