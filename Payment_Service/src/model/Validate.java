@@ -18,14 +18,14 @@ public class Validate {
 		{
 			output="Please fill all fields";
 		}
-		else if(cardNo.length()!=16 || !cardNo.matches("[0-9]+")) {
+		else if(cardNo.length()!=16 && !cardNo.matches("[0-9]+")) {
 			output="Invalid Card No";
 		}
 		else if(!holderName.matches("[a-zA-Z_]+"))
 		{
 			output="Invalid Cardholder Name";
 		}
-		else if(cvv.length()!=3 || !cvv.matches("[0-9]+")) 
+		else if(cvv.length()!=3 && !cvv.matches("[0-9]+")) 
 		{
 			output="Invalid cvv";
 		}
