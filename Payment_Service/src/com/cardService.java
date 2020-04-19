@@ -17,7 +17,7 @@ import org.jsoup.nodes.Document;
 @Path("/Cards")
 public class cardService {
 	Card cardObj = new Card();
-
+	
 	// for cards.........................
 	@GET
 	@Path("/")

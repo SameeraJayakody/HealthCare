@@ -1,6 +1,7 @@
 package model;
 
 import database.dbconnect;
+import model.Validate;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,58 +13,7 @@ import database.dbconnect;
 public class Payment {
 
 	dbconnect object = new dbconnect();
-
-// validate appointmentid---------------------------------------------------------------
-	public Boolean validateAppointmentId(String appointmentId) {
-
-		try {
-			Connection con = object.connect();
-			if (con == null) {
-				return false;
-			}
-
-			// validate appointmentid
-			PreparedStatement stmt1 = con.prepareStatement("SELECT aID FROM appointment a" + " WHERE a.aID=? ");
-			stmt1.setInt(1, Integer.parseInt(appointmentId));
-			ResultSet result1 = stmt1.executeQuery();
-
-			if (result1.next() != false) {
-
-				return true;
-			}
-
-		} catch (Exception e) {
-			System.err.println(e.getMessage());
-		}
-		return true;
-
-	}
-
-// validate patientid-----------------------------------------------------------
-	public Boolean validatePatientId(String patientId) {
-
-		try {
-			Connection con = object.connect();
-			if (con == null) {
-				return false;
-			}
-
-			// validate patientid
-			PreparedStatement stmt2 = con.prepareStatement("SELECT pID FROM patient p" + " WHERE p.pID=? ");
-			stmt2.setInt(1, Integer.parseInt(patientId));
-			ResultSet result2 = stmt2.executeQuery();
-
-			if (result2.next() != false) {
-
-				return true;
-			}
-
-		} catch (Exception e) {
-			System.err.println(e.getMessage());
-		}
-		return true;
-
-	}
+	Validate valObj = new Validate();
 
 	public String addPayment(String patientId, String appointmentId, String paymentType) {
 		String output = "";
@@ -151,16 +101,25 @@ public class Payment {
 
 	public String insertPayment(String patientId, String appointmentId, String paymentType) {
 		String output;
-		if (validateAppointmentId(appointmentId) != false && validatePatientId(patientId) != false) {
-			output = addPayment(patientId, appointmentId, paymentType);
-
-			if (output.equals("Inserted successfully")) {
-				// update payment status in appointment table
-				updatePaymentStatus(appointmentId);
-			}
-		} else {
-			output = "Error while inserting";
+		
+		if(!valObj.validatePaymentInput(patientId, appointmentId, paymentType).equals("Success"))
+		{
+			output=valObj.validatePaymentInput(patientId, appointmentId, paymentType);
 		}
+		else
+		{
+			if (valObj.validateAppointmentId(appointmentId) != false && valObj.validatePatientId(patientId) != false) {
+				output = addPayment(patientId, appointmentId, paymentType);
+
+				if (output.equals("Inserted successfully")) {
+					// update payment status in appointment table
+					updatePaymentStatus(appointmentId);
+				}
+			} else {
+				output = "Error while inserting";
+			}
+		}
+		
 		return output;
 	}
 

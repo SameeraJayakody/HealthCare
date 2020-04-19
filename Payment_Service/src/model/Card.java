@@ -5,14 +5,15 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
-import database.dbconnect;
+import model.Validate;
 
 public class Card {
 
 	dbconnect object = new dbconnect();
+	Validate valObj = new Validate();
+	
 
-	public String insertCard(String cardNo, String holderName, String expiryDate, String cvv, String paymentNo) {
+	public String addCard(String cardNo, String holderName, String expiryDate, String cvv, String paymentNo) {
 		String output = "";
 		try {
 			Connection con = object.connect();
@@ -38,6 +39,26 @@ public class Card {
 			output = "Error while inserting";
 			System.err.println(e.getMessage());
 		}
+		return output;
+	}
+	
+	public String insertCard(String cardNo, String holderName, String expiryDate, String cvv, String paymentNo) {
+		String output;
+		
+		if(!valObj.validateCardInput(cardNo, holderName, expiryDate, cvv, paymentNo).equals("Success"))
+		{
+			output=valObj.validateCardInput(cardNo, holderName, expiryDate, cvv, paymentNo);
+		}
+		else
+		{
+			if (valObj.validatePaymentNo(paymentNo) != false) {
+				output = addCard(cardNo, holderName, expiryDate,cvv,paymentNo);
+
+			} else {
+				output = "Error while inserting";
+			}
+		}
+		
 		return output;
 	}
 
