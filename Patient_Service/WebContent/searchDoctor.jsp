@@ -9,7 +9,7 @@
 <body>
 
 	<form method="get"
-		action="http://localhost:8080/HospitalMSystem/AppointmentService/Appointments/search?dname=<%=request.getParameter("dname")%>&specialization=<%=request.getParameter("specialization")%>">
+		action="http://localhost:8080/Patient_Service/AppointmentService/Appointments/search?dname=<%=request.getParameter("dname")%>&specialization=<%=request.getParameter("specialization")%>">
 		Doctor Name : <input name="dname" id="dname" type="text"><br>
 		Doctor Specialty : <input name="specialization" id="specialization"><br>
 

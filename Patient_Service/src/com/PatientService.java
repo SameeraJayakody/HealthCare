@@ -10,43 +10,56 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.parser.Parser;
-
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import model.Patient;
 
-import model.PatientDAO;
-
+/**PatientService class.
+ * @author Sachini
+ *
+ */
 @Path("/Patients")
 public class PatientService {
 
-	PatientDAO patiObj = new PatientDAO();
+	Patient patiObj = new Patient();
 
 	/*-------------------display profile of logged in user------------------*/
 	@GET
 	@Path("/displayProfile")
 	@Produces(MediaType.TEXT_HTML)
-	public String readPatients(@QueryParam("username") String username) {
-		return patiObj.readPatients(username);
+	public String readPatients(@QueryParam("pID") String pID) {
+		return patiObj.readPatients(pID);
 	}
+
+
 
 	/*-----------------------------insert patient-------------------------*/
 	@POST
 	@Path("/insert")
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	@Produces(MediaType.TEXT_PLAIN)
-	public String insertPatient(@FormParam("pFname") String pFname, @FormParam("pLname") String pLname,
-			@FormParam("pAge") String pAge, @FormParam("pGender") String pGender,
-			@FormParam("pAddress") String pAddress, @FormParam("pContactNo") String pContactNo,
-			@FormParam("pNIC") String pNIC, @FormParam("pEmail") String pEmail,
-			@FormParam("pUsername") String pUsername, @FormParam("pPassword") String pPassword) {
-		String output = patiObj.insertPatient(pFname, pLname, pAge, pGender, pAddress, pContactNo, pNIC, pEmail,
-				pUsername, pPassword);
+	public String insertPatient(@FormParam("pFname") String pFname, 
+			@FormParam("pLname") String pLname,
+			@FormParam("pAge") String pAge, 
+			@FormParam("pGender") String pGender,
+			@FormParam("pAddress") String pAddress,
+			@FormParam("pContactNo") String pContactNo,
+			@FormParam("pNIC") String pNIC, 
+			@FormParam("pEmail") String pEmail,
+			@FormParam("pUsername") String pUsername,
+			@FormParam("pPassword") String pPassword) {
+
+		String output = patiObj.insertPatient(pFname, pLname, pAge, pGender, pAddress, pContactNo,
+				pNIC, pEmail,pUsername, pPassword);
+
 		return output;
+
 	}
+
+
 
 	/*----------------update patient details in profile-----------------*/
 	@PUT
@@ -75,6 +88,8 @@ public class PatientService {
 
 		return output;
 	}
+
+
 
 	/*----------------------------delete patient----------------------*/
 	@DELETE
