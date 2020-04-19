@@ -7,6 +7,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
@@ -20,11 +21,15 @@ import com.google.gson.JsonParser;
 import model.*;
 
 
-@Path("/sh")
+@Path("/test")
 public class ItemService {
 	
-	item itemObj = new item();
+	item itemObj = new item();// create item class objects
 	
+	RoomClassification itemObj1 = new RoomClassification(); // create RoomClassification class object
+	
+	
+	// read schedule table details
 	
 	@GET
 	@Path("/readItems")
@@ -35,6 +40,7 @@ public class ItemService {
 	}
 	
 	
+	// read doctors details .Display to the patients/doctors.
 	
 	@GET
 	@Path("/DisplayDoctor")
@@ -46,6 +52,8 @@ public class ItemService {
 	
 	
 	
+	// view only schedule confirmed doctors details
+	
 	@GET
 	@Path("/ViewTable")
 	@Produces(MediaType.TEXT_HTML)
@@ -55,6 +63,7 @@ public class ItemService {
 	}
 	
 	
+	// display only confirmed doctors details to the particular time period
 	
 	@GET
 	@Path("/DisplayPatients")
@@ -66,6 +75,7 @@ public class ItemService {
 	
 	
 	
+	// view doctors Messages
 	
 	@GET
 	@Path("/readRequest")
@@ -77,6 +87,35 @@ public class ItemService {
 	
 	
 	
+	@GET
+	@Path("/RoomClassification/CheckRoom")
+	@Produces(MediaType.TEXT_HTML)
+	public String CheckRoom()
+	{
+	return itemObj1.CheckRoom();
+	}
+	
+	
+	
+	
+	
+	// View schedule details via ID
+	  
+	
+	  @GET
+	  
+	  @Path("/{appointment_Id}") 
+	  @Consumes(MediaType.APPLICATION_JSON)
+	  
+	  @Produces(MediaType.APPLICATION_JSON)
+	  public search ShowTypeById(@PathParam("appointment_Id") int id) 
+	  { 
+		  return itemObj.ShowTypeById(id);
+	  
+	  }
+	 
+	 
+		
 	
 	
 	// Start POST methods ------------------------------
@@ -87,20 +126,23 @@ public class ItemService {
 		@Path("/insertItem")
 		@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 		@Produces(MediaType.TEXT_PLAIN)
+		
 		public String insertItem(
-		@FormParam("s") String sid,
-		@FormParam("hid") String hid,
-		@FormParam("hnn") String hname,
-		@FormParam("dii") String did,
-		@FormParam("dnn") String dname,
-		@FormParam("spl") String special,
-		@FormParam("da") String date,
-	    @FormParam("st") String start,
-	    @FormParam("en") String end,
-	    @FormParam("rm") String room,
-		@FormParam("stats") String Status)
+		@FormParam("schedule_id") String schedule_id,
+		@FormParam("hospital_id") String hospital_id,
+		@FormParam("hospital_name") String hospital_name,
+		@FormParam("doctor_id") String doctor_id,
+		@FormParam("doctor_name") String doctor_name,
+		@FormParam("speciality") String speciality,
+		@FormParam("date") String date,
+	    @FormParam("startTime") String startTime,
+	    @FormParam("endTime") String endTime,
+	    @FormParam("roomNumber") String roomNumber,
+		@FormParam("status") String status)
+		
 		{
-		String output = itemObj.insertItem(sid, hid, hname, did,dname,special,date,start,end,room,Status);
+		String output = itemObj.insertItem(schedule_id, hospital_id, hospital_name, 
+				doctor_id,doctor_name,speciality,date,startTime,endTime,roomNumber,status);
 		return output;
 		}
 	
@@ -113,20 +155,21 @@ public class ItemService {
 		@Path("/insertConfirmSchedule")
 		@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 		@Produces(MediaType.TEXT_PLAIN)
+		
 		public String insertConfirmSchedule(
-		@FormParam("s") String sid,
-		//@FormParam("hid") String hid,
-		@FormParam("hnn") String hname,
-		//@FormParam("dii") String did,
-		@FormParam("dnn") String dname,
-		@FormParam("spl") String special,
-		@FormParam("da") String date,
-	    @FormParam("st") String start,
-	    @FormParam("en") String end,
-	    @FormParam("rm") String room,
-		@FormParam("stats") String Status)
+		@FormParam("scheduleID") String scheduleID,
+		@FormParam("hospitalName") String hospitalName,
+		@FormParam("doctorName") String doctorName,
+		@FormParam("speciality") String speciality,
+		@FormParam("date") String date,
+	    @FormParam("startTime") String startTime,
+	    @FormParam("endTime") String endTime,
+	    @FormParam("roomNumber") String roomNumber,
+		@FormParam("Status") String Status)
+		
 		{
-		String output = itemObj.insertConfirmSchedule(sid,hname,dname,special,date,start,end,room,Status);
+		String output = itemObj.insertConfirmSchedule(scheduleID,hospitalName,doctorName,speciality,date,startTime,
+				endTime,roomNumber,Status);
 		return output;
 		}
 
@@ -196,22 +239,22 @@ public class ItemService {
 		
 		
 		
-		
+		// confirmed schedule by updating the status
 		
 		@PUT
-		@Path("/updateTes")
+		@Path("/updateDoctorStatus")
 		@Consumes(MediaType.APPLICATION_JSON)
 		@Produces(MediaType.TEXT_PLAIN)
-		public String updateTe(String itemData)
+		public String updateDoctorStatus(String itemData)
 		{
 		//Convert the input string to a JSON object
 		JsonObject itemObject = new JsonParser().parse(itemData).getAsJsonObject();
 		//Read the values from the JSON object
 		
-		String di = itemObject.get("id").getAsString();
-		String s = itemObject.get("st").getAsString();
+		String scheduleID = itemObject.get("scheduleID").getAsString();
+		String status = itemObject.get("status").getAsString();
 		
-		String output = itemObj.updateTes(di,s);
+		String output = itemObj.updateDoctorStatus(scheduleID,status);
 		
 		return output;
 		
@@ -239,14 +282,14 @@ public class ItemService {
 		//Convert the input string to an XML document
 		Document doc = Jsoup.parse(itemData, "", Parser.xmlParser());
 		//Read the value from the element <itemID>
-		String id = doc.select("d").text();
+		String id = doc.select("ID").text();
 		String output = itemObj.deleteItem(id);
 		return output;
 		}
 		
 		
 		
-	    
+	// remove records from confirmed schedule details    
 	    
 
 		@DELETE

@@ -1,30 +1,22 @@
 package model;
 
+import database.dbconnect;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import model.Validate;
 
 public class Card {
 
-	public Connection connect() {
-		Connection con = null;
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/hospital_database", "root", "");
-			// For testing
-			System.out.print("Successfully connected");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return con;
-	}
+	dbconnect object = new dbconnect();
+	Validate valObj = new Validate();
+	
 
-	public String insertCard(String cardNo, String holderName, String expiryDate, String cvv, String paymentNo) {
+	public String addCard(String cardNo, String holderName, String expiryDate, String cvv, String paymentNo) {
 		String output = "";
 		try {
-			Connection con = connect();
+			Connection con = object.connect();
 			if (con == null) {
 				return "Error while connecting to the database";
 			}
@@ -49,11 +41,31 @@ public class Card {
 		}
 		return output;
 	}
+	
+	public String insertCard(String cardNo, String holderName, String expiryDate, String cvv, String paymentNo) {
+		String output;
+		
+		if(!valObj.validateCardInput(cardNo, holderName, expiryDate, cvv, paymentNo).equals("Success"))
+		{
+			output=valObj.validateCardInput(cardNo, holderName, expiryDate, cvv, paymentNo);
+		}
+		else
+		{
+			if (valObj.validatePaymentNo(paymentNo) != false) {
+				output = addCard(cardNo, holderName, expiryDate,cvv,paymentNo);
+
+			} else {
+				output = "Error while inserting";
+			}
+		}
+		
+		return output;
+	}
 
 	public String readCard() {
 		String output = "";
 		try {
-			Connection con = connect();
+			Connection con = object.connect();
 			if (con == null) {
 				return "Error while connecting to the database for reading.";
 			}
@@ -96,7 +108,7 @@ public class Card {
 	public String updateCard(String cardNo, String holderName, String expiryDate, String cvv) {
 		String output = "";
 		try {
-			Connection con = connect();
+			Connection con = object.connect();
 			if (con == null) {
 				return "Error while connecting to the database for updating.";
 			}
@@ -122,7 +134,7 @@ public class Card {
 	public String deleteCard(String cardNo) {
 		String output = "";
 		try {
-			Connection con = connect();
+			Connection con = object.connect();
 			if (con == null) {
 				return "Error while connecting to the database for deleting.";
 			}
